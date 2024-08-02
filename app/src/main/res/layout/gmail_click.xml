@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_playstore_dialog"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <TextView
+      android:id="@+id/icCross"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:drawableStart="@drawable/cross"
+      android:layout_marginTop="20dp"
+      android:layout_marginLeft="17dp"
+      />
+
+    <TextView
+        android:id="@+id/tvG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G"
+        android:textColor="@color/blue"
+        android:textSize="23sp"
+
+        app:layout_constraintTop_toTopOf="@id/icCross"
+        app:layout_constraintStart_toEndOf="@id/icCross"
+        app:layout_constraintBottom_toBottomOf="@id/icCross"
+        android:layout_marginStart="110dp"
+        />
+    <TextView
+
+        android:id="@+id/tvO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="o"
+        android:textColor="@color/red"
+        android:textSize="23dp"
+        app:layout_constraintStart_toEndOf="@id/tvG"
+        app:layout_constraintTop_toTopOf="@id/tvG"
+/>
+    <TextView
+        android:id="@+id/tvO2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="o"
+        android:textColor="@color/orange"
+        android:textSize="23dp"
+        app:layout_constraintStart_toEndOf="@id/tvO"
+        app:layout_constraintTop_toTopOf="@id/tvO"
+        />
+    <TextView
+        android:id="@+id/tvG2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="g"
+        android:textColor="@color/blue"
+        android:textSize="23dp"
+        app:layout_constraintStart_toEndOf="@+id/tvO2"
+        app:layout_constraintTop_toTopOf="@id/tvO2"
+        />
+    <TextView
+        android:id="@+id/tvL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="l"
+        android:textColor="@color/green"
+        android:textSize="23dp"
+        app:layout_constraintStart_toEndOf="@+id/tvG2"
+        app:layout_constraintTop_toTopOf="@id/tvG2"
+        />
+    <TextView
+        android:id="@+id/tvE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="e"
+        android:textColor="@color/red"
+        android:textSize="23dp"
+        app:layout_constraintStart_toEndOf="@id/tvL"
+        app:layout_constraintTop_toTopOf="@id/tvL"
+        android:paddingRight="150dp"
+        />
+
+    <TextView
+        android:id="@+id/firstShape"
+      android:layout_marginTop="40dp"
+        android:layout_width="330dp"
+        android:layout_height="150dp"
+        android:background="@drawable/first_background_shape"
+        app:layout_constraintStart_toStartOf="@id/icCross"
+        app:layout_constraintTop_toTopOf="@id/icCross"
+
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ivProfileCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/icCross"
+        app:layout_constraintTop_toBottomOf="@id/icCross"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="10dp"
+        app:cardCornerRadius="50dp"
+        >
+
+<ImageView
+    android:id="@+id/ivProfile"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/profile"
+    android:background="@drawable/first_background_shape"
+
+    />
+    </androidx.cardview.widget.CardView>
+<TextView
+    android:id="@+id/tvUserName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Adnan Yaseen"
+    android:textSize="16dp"
+    android:textColor="@color/black"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="7dp"
+    app:layout_constraintStart_toEndOf="@id/ivProfileCardView"
+    app:layout_constraintTop_toTopOf="@id/ivProfileCardView"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvUserName"
+        app:layout_constraintTop_toTopOf="@id/tvUserName"
+        android:layout_marginStart="100dp"
+        android:drawableStart="@drawable/arrow_drop"
+
+        />
+    <TextView
+        android:id="@+id/tvGamil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="adnayaseen716@gamil.com"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="@id/tvUserName"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName"
+        />
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="   Manage your Google Account"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:background="@drawable/manage_shape"
+        android:layout_marginTop="20dp"
+        android:padding="7dp"
+        app:layout_constraintStart_toStartOf="@id/tvGamil"
+        app:layout_constraintTop_toBottomOf="@id/tvGamil"
+        />
+    <TextView
+        android:id="@+id/second_background"
+        android:layout_width="330dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/second_background"
+        app:layout_constraintStart_toStartOf="@id/firstShape"
+        app:layout_constraintEnd_toEndOf="@id/firstShape"
+        app:layout_constraintTop_toBottomOf="@id/firstShape"
+        />
+
+    <TextView
+        android:id="@+id/tvManageApps"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage apps and devices"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/apps"
+        android:drawablePadding="20dp"
+
+        app:layout_constraintStart_toStartOf="@id/second_background"
+        app:layout_constraintTop_toTopOf="@id/second_background"
+        android:paddingLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/tvNotify"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications and offers"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/notify"
+        android:drawablePadding="20dp"
+        android:paddingLeft="15dp"
+
+        app:layout_constraintStart_toStartOf="@id/tvManageApps"
+        app:layout_constraintTop_toBottomOf="@id/tvManageApps"
+
+        />
+
+    <TextView
+        android:id="@+id/tvPayment"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment and subscriptions"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/payment"
+        android:drawablePadding="20dp"
+        android:paddingLeft="15dp"
+
+        app:layout_constraintStart_toStartOf="@id/tvNotify"
+        app:layout_constraintTop_toBottomOf="@id/tvNotify"
+
+        />
+
+    <TextView
+        android:id="@+id/tvPlayProtect"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Protect"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/play"
+        android:drawablePadding="20dp"
+        android:paddingLeft="15dp"
+
+        app:layout_constraintStart_toStartOf="@id/tvPayment"
+        app:layout_constraintTop_toBottomOf="@id/tvPayment"
+        />
+
+    <TextView
+        android:id="@+id/tvLibrary"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Library"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/library"
+        android:drawablePadding="20dp"
+        android:paddingLeft="15dp"
+
+        app:layout_constraintStart_toStartOf="@id/tvPlayProtect"
+        app:layout_constraintTop_toBottomOf="@id/tvPlayProtect"
+
+        />
+
+    <TextView
+        android:id="@+id/tvSettings"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/settings"
+        android:drawablePadding="20dp"
+        android:paddingLeft="15dp"
+
+        app:layout_constraintStart_toStartOf="@id/tvLibrary"
+        app:layout_constraintTop_toBottomOf="@id/tvLibrary"
+
+        />
+
+    <TextView
+        android:id="@+id/tvHelpAndFeedback"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help and Feedback"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/help"
+        android:drawablePadding="20dp"
+        android:paddingLeft="15dp"
+
+        app:layout_constraintStart_toStartOf="@id/tvSettings"
+        app:layout_constraintTop_toBottomOf="@id/tvSettings"
+/>
+
+    <TextView
+
+        android:id="@+id/tvPrivacyTerms"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy    .     Terms of service"
+        android:textSize="12dp"
+        android:drawablePadding="20dp"
+        android:paddingLeft="60dp"
+        app:layout_constraintStart_toStartOf="@id/tvHelpAndFeedback"
+        app:layout_constraintTop_toBottomOf="@id/tvHelpAndFeedback"
+        android:paddingBottom="25dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

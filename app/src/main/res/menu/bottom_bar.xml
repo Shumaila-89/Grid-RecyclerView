@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item  android:title="Games"
+    android:id="@+id/icGames"
+    app:showAsAction="always"
+    android:icon="@drawable/games"
+    />
+    <item android:title="Apps"
+        android:id="@+id/icApps"
+        app:showAsAction="always"
+        android:icon="@drawable/apps_filled"
+
+        />
+
+</menu>
